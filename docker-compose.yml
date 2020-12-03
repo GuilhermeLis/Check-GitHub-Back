@@ -1,0 +1,10 @@
+services:
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: manager
+      POSTGRES_PASSWORD: 1amd2msakd833ksa
+      POSTGRES_DB: sigalei
+    ports:
+      - 5432:5432
