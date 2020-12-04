@@ -11,7 +11,6 @@
   },
   "devDependencies": {
     "@adonisjs/assembler": "^3.0.0",
-    "@adonisjs/cli": "^4.0.12",
     "adonis-preset-ts": "^1.1.0",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^6.15.0",
