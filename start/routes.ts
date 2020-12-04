@@ -20,6 +20,10 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
+
+Route.get('charge', 'ChargesController.index')
+
 Route.get('/', async () => {
   return { hello: 'world' }
+
 })
