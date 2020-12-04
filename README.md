@@ -46,6 +46,4 @@ Para a execução desse projeto será necessário as seguintes ferramentas:
 
   ```$ node ace migration:run```
 
-  ```$ yarn seed```
-
   Pronto você já pode usar a aplicação, obrigado pela paciência.
