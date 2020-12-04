@@ -87,7 +87,6 @@ export async function getFirstCharge(after?: string) {
 }
 
 export function getAll() {
-  var run = true
   Database.query()
     .select('cursor')
     .from('cursors')
@@ -96,7 +95,5 @@ export function getAll() {
     .then((value) => {
       const { cursor } = value[0]
       getFirstCharge(cursor)
-        .then((result) => (run = result))
-        .catch((Error) => console.log(Error))
     })
 }
