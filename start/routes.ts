@@ -20,10 +20,11 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-
 Route.get('charge', 'ChargesController.index')
+Route.get('author', 'DevelopersController.rankingAuthor')
+Route.get('authorByAddintions', 'DevelopersController.rankingAuthorByAddintions')
+Route.get('authorByRemovals', 'DevelopersController.rankingAuthorByRemovals')
 
 Route.get('/', async () => {
   return { hello: 'world' }
-
 })
