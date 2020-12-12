@@ -14,6 +14,7 @@ type nodesItem = {
       login: string
     }
   }
+
   committedDate: string
   additions: number
   deletions: number
@@ -66,7 +67,7 @@ export async function getFirstCharge(after?: string) {
       Developer.create({
         oid: item.oid,
         messageHeadline: item.messageHeadline,
-        author: item.author.user ? item.author.user.login : null,
+        author: item.author.user ? item.author.user.login : undefined,
         committedDate: DateTime.fromISO(item.committedDate),
         additions: item.additions,
         removals: item.deletions,
