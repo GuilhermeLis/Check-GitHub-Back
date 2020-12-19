@@ -6,7 +6,7 @@ export const graphQlCall = async (query, variables = {}) => {
     JSON.stringify({ query, variables }),
     {
       headers: {
-        Authorization: 'Bearer 14ce5425bb5e4dad590086f8456fd9f2c2782720',
+        Authorization: `Bearer `,
       },
     }
   )
